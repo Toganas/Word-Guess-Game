@@ -32,3 +32,9 @@
     border: #e99548 dashed 1px;
     height: 50%;
 }
+
+#message {
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 20px;
+}
