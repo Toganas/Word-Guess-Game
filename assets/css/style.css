@@ -36,5 +36,13 @@
 #message {
     color: whitesmoke;
     text-align: center;
+    font-size: 30px;
     margin-top: 20px;
+}
+
+#wins {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
 }
