@@ -3,7 +3,7 @@
     src: url("../fontface/animales_fantastic.otf") format("opentype");
 }
 
-body{
+#body{
     background-color: black;
 }
 .title{
@@ -21,4 +21,9 @@ body{
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+#image{
+    border: #e99548 dashed 1px;
+    height: 50%;
 }
