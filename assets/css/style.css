@@ -14,7 +14,7 @@
     color: #FFB066;
     text-align: center;
     margin-top: 0px;
-    font-size: 100px;
+    font-size: 4.5em;
     margin-bottom: 0px;
     position: relative;
     bottom: .25em;
@@ -23,7 +23,7 @@
     position: relative;
 }
 #fantastic{
-    margin-top: 0;
+    margin-top: auto;;
     width: 30%;
     margin-left: auto;
     margin-right: auto;
@@ -34,6 +34,7 @@
     border: #FFB066 dashed 1px;
     height: 50%;
     margin-bottom: 2em;
+    font-size:1.5em;
    
 }
 
@@ -51,7 +52,7 @@
 }
 
 #wins {
-  text-align: center;
+  margin-bottom: 1em;
 }
 
 #text {
@@ -59,10 +60,15 @@
 }
 
 #previous {
-    margin-top:1em;
+    margin-top:2em;
     margin-bottom: 1em;
+    text-align: center;
 }
 
 #picture {
     margin-bottom: 2em;
+}
+
+#letters{
+    margin-bottom: 1.65em;
 }
