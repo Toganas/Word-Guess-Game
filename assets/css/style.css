@@ -6,9 +6,13 @@
 #body{
     background-color: black;
     font-family: "animales_fantastic", "Times New Roman",sans-serif;
-    font-size: 100%;
-    color: #FFB066;
+      color: #FFB066;
 }
+
+#wordGame{
+      border: #FFB066 dashed 1px;
+}
+
 .title{
     font-family: "animales_fantastic", "Times New Roman",sans-serif;
     color: #FFB066;
@@ -19,9 +23,11 @@
     position: relative;
     bottom: .25em;
 }
+
 #title{
     position: relative;
 }
+
 #fantastic{
     margin-top: auto;;
     width: 30%;
@@ -31,7 +37,6 @@
 }
 
 #image{
-    border: #FFB066 dashed 1px;
     height: 50%;
     margin-bottom: 2em;
     font-size:1.5em;
@@ -39,11 +44,8 @@
 }
 
 #guessing{
-    border: #FFB066 dashed 1px;
-    height: 50%;
-    font-size: 1.5em;
-    text-align: center;
-   
+    font-size: 1.2em;
+    text-align: center;   
 }
 
 #message {
@@ -65,10 +67,7 @@
     text-align: center;
 }
 
-#picture {
-    margin-bottom: 2em;
-}
-
 #letters{
     margin-bottom: 1.65em;
 }
+
