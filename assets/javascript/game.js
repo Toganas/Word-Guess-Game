@@ -1,29 +1,9 @@
-var words = [
-    { w: "albus dumbledore" },
-    { w: "baby nifflers" },
-    { w: "pickett the bowtruckle" },
-    { w: "bunty" },
-    { w: "chupacabra" },
-    { w: "credence barebone" },
-    { w: "demiguise" },
-    { w: "gellert grindelwald" },
-    { w: "jacob kowalski" },
-    { w: "leta lestrange" },
-    { w: "matagot" },
-    { w: "nagini" },
-    { w: "newt scamander" },
-    { w: "nicolas flamel" },
-    { w: "niffler" },
-    { w: "obscurus" },
-    { w: "occamy" },
-    { w: "persimmon" },
-    { w: "pistachio" },
-    { w: "porpentina goldstein" },
-    { w: "pumpernickel" },
-    { w: "pumpkin" },
-    { w: "queenie goldstein" },
-    { w: "swooping evil" },
-    { w: "theseus scamander" },
-    { w: "thunderbird" }
+var words = ["albus dumbledore", "baby nifflers", "pickett the bowtruckle", "bunty", "chupacabra", "credence barebone", "demiguise", "gellert grindelwald", "jacob kowalski", "leta lestrange", "matagot", "nagini", "newt scamander", "nicolas flamel", "niffler", "obscurus", "occamy", "persimmon", "pistachio", "porpentina goldstein", "pumpernickel", "pumpkin", "queenie goldstein", "swooping evil", "theseus scamander", "thunderbird"]
 
-]
+for(var i=0; i < words.length; i++){
+    
+}
+
+var currentWord = words[Math.floor(Math.random() * words.length)]
+
+console.log(currentWord)
