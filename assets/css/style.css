@@ -33,6 +33,7 @@
 #image{
     border: #FFB066 dashed 1px;
     height: 50%;
+    margin-bottom: 2em;
    
 }
 
@@ -57,3 +58,11 @@
     margin-bottom: 1em;
 }
 
+#previous {
+    margin-top:1em;
+    margin-bottom: 1em;
+}
+
+#picture {
+    margin-bottom: 2em;
+}
