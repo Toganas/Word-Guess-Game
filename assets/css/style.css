@@ -5,16 +5,23 @@
 
 #body{
     background-color: black;
+    font-family: "animales_fantastic", "Times New Roman",sans-serif;
+    font-size: 100%;
+    color: #FFB066;
 }
 .title{
     font-family: "animales_fantastic", "Times New Roman",sans-serif;
-    color: #e99548;
+    color: #FFB066;
     text-align: center;
     margin-top: 0px;
-    font-size: 40px;
+    font-size: 100px;
     margin-bottom: 0px;
+    position: relative;
+    bottom: .25em;
 }
-
+#title{
+    position: relative;
+}
 #fantastic{
     margin-top: 0;
     width: 30%;
@@ -24,25 +31,29 @@
 }
 
 #image{
-    border: #e99548 dashed 1px;
+    border: #FFB066 dashed 1px;
     height: 50%;
+   
 }
 
 #guessing{
-    border: #e99548 dashed 1px;
+    border: #FFB066 dashed 1px;
     height: 50%;
+    font-size: 1.5em;
+    text-align: center;
+   
 }
 
 #message {
-    color: whitesmoke;
-    text-align: center;
-    font-size: 30px;
-    margin-top: 20px;
+   margin-top: 2em;
+   margin-bottom: 1em;
 }
 
 #wins {
-    margin-top: 20px;
-    font-size: 30px;
-    text-align: center;
-    color: whitesmoke;
+  text-align: center;
 }
+
+#text {
+    margin-bottom: 1em;
+}
+

@@ -11,14 +11,15 @@
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
 </head>
 
 <body id="body">
 
     <img id="fantastic" src="assets/images/fantastic_beasts_3.jpg" alt="Fantastic Beasts">
-    <div class="title">Hangman</div>
-
+    <div class="container" id="title">
+        <div class="title">Hangman</div>
+    </div>
     <div class="container">
 
         <div class="row">
@@ -27,23 +28,31 @@
 
                 <div class="row">
 
-<div class="col-md-12" id="previous"></div>
+                    <div class="col-md-12" id="previous"></div>
 
-                   <div class="col-md-12"> 
-                       <img id="first_image" class="img-fluid mt-4 mb-4" src="assets/images/fantastic_beasts.jpg"
-                        alt="Fantastic Beasts">
-                        </div>
+                    <div class="col-md-12">
+                        <img id="first_image" class="img-fluid mt-5 mb-5" src="assets/images/fantastic_beasts.jpg"
+                            alt="Fantastic Beasts">
+                    </div>
                 </div>
             </div>
 
             <div class="col-md-6" id="guessing">
 
                 <row>
-                    <div class="col-md-12" id="message">Press Any Letter To Start</div>
+                    <div class="col-md-12 styling" id="message">Press Any Letter To Start</div>
                 </row>
 
                 <row>
-                    <div class="col-md-12" id="wins">Words Guessed Correctly:</div>
+                    <div class="col-md-12" id="text">Words Guessed Correctly:</div>
+                </row>
+
+                <row>
+                    <div class="col-md-12" id="wins"></div>
+                </row>
+
+                <row>
+                    <div class="col-md-12" id="text">Current Word:</div>
                 </row>
 
                 <row>
@@ -51,7 +60,15 @@
                 </row>
 
                 <row>
-                    <div class="col-md-12" id="guessed"></div>
+                    <div class="col-md-12" id="text">Letters Guessed:</div>
+                </row>
+
+                <row>
+                    <div class="col-md-12" id="letters"></div>
+                </row>
+
+                <row>
+                    <div class="col-md-12"></div>
                 </row>
 
             </div>
