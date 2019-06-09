@@ -18,13 +18,10 @@ var underscore = [];
 
 var generateUnderscore = function() {
     for (var i = 0; i < currentWord.length; i++) {
-        underscore.push("_");
-           
+        underscore.push("_");           
             }
     return underscore;
     }
-
-    
 
 document.getElementById("current").innerHTML = generateUnderscore().join(" ");
 
@@ -37,7 +34,13 @@ var keyGuess = null;
 
 document.onkeyup = function (event) {
     if (event.keyCode >= 65 && event.keyCode <= 90) {
-        keyGuess = event.key.toLowerCase()
+        keyGuess = event.key.toLowerCase();
+       
+        // correct letter
+        
+        if (currentWord.indexOf(keyGuess) > -1) {
+            console.log(true);
+        }
     }
     console.log(keyGuess)
 }
