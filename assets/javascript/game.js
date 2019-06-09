@@ -17,3 +17,18 @@ document.getElementById("current").innerHTML=split.join("");
 
 
 console.log(split);
+
+
+var keyGuess = null;
+
+document.onkeyup = function (event) {
+
+
+    if (event.keyCode >= 65 && event.keyCode <= 90) {
+        keyGuess = event.key.toLowerCase()
+    }
+    console.log(keyGuess)
+}
+
+// function (word)
+
