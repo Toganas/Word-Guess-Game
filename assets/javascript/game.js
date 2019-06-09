@@ -38,35 +38,33 @@ document.onkeyup = function (event) {
     if (event.keyCode >= 65 && event.keyCode <= 90) {
         keyGuess = event.key.toLowerCase();
        
-        // correct letter
-        
-        
-            
+        // correct letter  
+                
         for (var j =0; j < currentWord.length; j++){
             if (currentWord[j] === keyGuess){
                 underscore[j] = keyGuess;
             }
-
-            // incorrect letter
-
-            
         }
-        
+        document.getElementById("current").innerHTML = underscore. join(" ");
+        // incorrect letter
 
-            // Fully Guessed Word
-
-            if (underscore.join("") == currentWord){
-                // console.log("You Win");
-            } 
-            console.log(underscore);
+       
         if (currentWord.indexOf(keyGuess) > -1) {
             correct.push(keyGuess);
             underscore[currentWord.indexOf(keyGuess)] = keyGuess;
         }
         else {
-                incorrect.push(keyGuess);
-                console.log(incorrect);
-            }
+            incorrect.push(keyGuess);
+            console.log(incorrect);
+        }
+
+            // Fully Guessed Word
+
+            if (underscore.join("") == currentWord){
+                console.log("You Win"); 
+            } 
+
+          
         }
 
        
