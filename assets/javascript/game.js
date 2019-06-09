@@ -18,12 +18,12 @@ console.log(currentWord);
 
 
 
-var generateUnderscore = function () {
+var generateUnderscore = function() {
     for (var i = 0; i < currentWord.length; i++) {
-        underscore.push("_");
-    }
+        underscore.push("_");           
+            }
     return underscore;
-}
+    }
 
 document.getElementById("current").innerHTML = generateUnderscore().join(" ");
 
@@ -37,25 +37,37 @@ var keyGuess = null;
 document.onkeyup = function (event) {
     if (event.keyCode >= 65 && event.keyCode <= 90) {
         keyGuess = event.key.toLowerCase();
-
+       
         // correct letter
-
-        if (currentWord.indexOf(keyGuess) > -1) {
-            correct.push(keyGuess);
-            underscore[currentWord.indexOf(keyGuess)] = keyGuess;
-            console.log(underscore);
+        
+        // if (currentWord.indexOf(keyGuess) > -1) {
+        //     correct.push(keyGuess);
+        //     underscore[currentWord.indexOf(keyGuess)] = keyGuess;
+            
+        for (var j =0; j < currentWord.length; j++){
+            if (currentWord[j] === keyGuess){
+                underscore[j] = keyGuess;
+            }
         }
 
+            // Fully Guessed Word
+
+            if (underscore.join("") == currentWord){
+                // console.log("You Win");
+            } 
+            console.log(underscore);
+
+        }
+
+        // incorrect letter
+
+        else {
+            incorrect.push(keyGuess);
+            console.log(incorrect);
+        }
+    
     }
+    console.log(keyGuess)
 
-    // incorrect letter
-
-    else {
-        incorrect.push(keyGuess);
-    }
-
-}
-console.log(keyGuess)
-}
 
 
