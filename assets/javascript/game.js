@@ -19,13 +19,15 @@ var underscore = [];
 var generateUnderscore = function() {
     for (var i = 0; i < currentWord.length; i++) {
         underscore.push("_");
-    }
+           
+            }
     return underscore;
-    
-}
+    }
 
-document.getElementById("current").innerHTML = generateUnderscore();
-console.log (generateUnderscore());
+    
+
+document.getElementById("current").innerHTML = generateUnderscore().join(" ");
+
 
 
 
