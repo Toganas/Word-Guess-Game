@@ -2,6 +2,8 @@
 
 var words = ["dumbledore", "babynifflers", "pickett", "bunty", "chupacabra", "credence", "demiguise", "grindelwald", "jacob", "leta", "matagot", "nagini", "newt", "nicolasflamel", "niffler", "obscurus", "occamy", "persimmon", "pistachio", "tina", "pumpernickel", "pumpkin", "queenie", "swoopingevil", "theseus", "thunderbird"]
 
+// list of images
+
 // variables that need manipulation
 
 var correct = [];
@@ -56,6 +58,8 @@ document.onkeyup = function (event) {
             incorrect.push(keyGuess);
             console.log(incorrect);
             document.getElementById("letters").innerHTML = incorrect.join(", ");
+            document.getElementById("remaining").innerHTML = remaining -= 1;
+            
         }
 
             // Fully Guessed Word
