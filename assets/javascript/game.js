@@ -59,7 +59,6 @@ document.onkeyup = function (event) {
             console.log(incorrect);
             document.getElementById("letters").innerHTML = incorrect.join(", ");
             document.getElementById("remaining").innerHTML = remaining -= 1;
-            
         }
 
             // Fully Guessed Word
@@ -70,6 +69,9 @@ document.onkeyup = function (event) {
 
             // Out of guesses
 
+            if (remaining === 0) {
+                console.log("Better Luck Next Time")
+            }
           
         }
     }
