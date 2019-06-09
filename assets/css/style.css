@@ -70,4 +70,11 @@
 #letters{
     margin-bottom: 1.65em;
 }
+#current {
+    margin-bottom: 1em;
+}
 
+#dashes {
+    display: inline-block;
+    list-style: none;
+}

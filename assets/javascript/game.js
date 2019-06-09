@@ -1,6 +1,6 @@
 // list of words
 
-var words = ["albus dumbledore", "baby nifflers", "pickett the bowtruckle", "bunty", "chupacabra", "credence barebone", "demiguise", "gellert grindelwald", "jacob kowalski", "leta lestrange", "matagot", "nagini", "newt scamander", "nicolas flamel", "niffler", "obscurus", "occamy", "persimmon", "pistachio", "porpentina goldstein", "pumpernickel", "pumpkin", "queenie goldstein", "swooping evil", "theseus scamander", "thunderbird"]
+var words = ["dumbledore", "baby nifflers", "pickett", "bunty", "chupacabra", "credence", "demiguise", "grindelwald", "jacob", "leta", "matagot", "nagini", "newt", "nicolas flamel", "niffler", "obscurus", "occamy", "persimmon", "pistachio", "tina", "pumpernickel", "pumpkin", "queenie", "swooping evil", "theseus", "thunderbird"]
 
 // for(var i=0; i < words.length; i++){
     
