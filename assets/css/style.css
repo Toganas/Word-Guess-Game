@@ -79,3 +79,7 @@
     display: inline-block;
     list-style: none;
 }
+
+#remaining {
+    margin-bottom: 1em;
+}
