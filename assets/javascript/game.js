@@ -8,16 +8,31 @@ var words = ["dumbledore", "baby nifflers", "pickett", "bunty", "chupacabra", "c
 
 
 // grabbing a word
+
 var currentWord = words[Math.floor(Math.random() * words.length)];
 currentWord = currentWord.replace(" ","");
 var split = currentWord.split('');
+split = [split]
 
-document.getElementById("current").innerHTML=split.join("");
+console.log(split)
 
 
 
-console.log(split);
+// Creating Underscores
 
+// var underscore = [];
+
+// var generateUnderscore = function () {
+//     for (var i = 0, split.length; i++){
+//     underscore.push('_');
+//     }
+// }
+
+// console.log(generateUnderscore());
+
+// document.getElementById("current").innerHTML = split.join("");
+
+// On keyup event
 
 var keyGuess = null;
 
@@ -30,5 +45,4 @@ document.onkeyup = function (event) {
     console.log(keyGuess)
 }
 
-// function (word)
 
