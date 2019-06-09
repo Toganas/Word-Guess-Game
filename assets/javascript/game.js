@@ -45,7 +45,7 @@ document.onkeyup = function (event) {
                 underscore[j] = keyGuess;
             }
         }
-        document.getElementById("current").innerHTML = underscore. join(" ");
+        document.getElementById("current").innerHTML = underscore.join(" ");
         // incorrect letter
 
        
@@ -56,6 +56,8 @@ document.onkeyup = function (event) {
         else {
             incorrect.push(keyGuess);
             console.log(incorrect);
+            document.getElementById("letters").innerHTML = incorrect.join(", ");
+            
         }
 
             // Fully Guessed Word
