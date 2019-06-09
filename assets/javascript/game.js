@@ -18,12 +18,12 @@ console.log(currentWord);
 
 
 
-var generateUnderscore = function() {
+var generateUnderscore = function () {
     for (var i = 0; i < currentWord.length; i++) {
-        underscore.push("_");           
-            }
-    return underscore;
+        underscore.push("_");
     }
+    return underscore;
+}
 
 document.getElementById("current").innerHTML = generateUnderscore().join(" ");
 
@@ -37,21 +37,25 @@ var keyGuess = null;
 document.onkeyup = function (event) {
     if (event.keyCode >= 65 && event.keyCode <= 90) {
         keyGuess = event.key.toLowerCase();
-       
+
         // correct letter
-        
+
         if (currentWord.indexOf(keyGuess) > -1) {
             correct.push(keyGuess);
-            console.log(correct);
+            underscore[currentWord.indexOf(keyGuess)] = keyGuess;
+            console.log(underscore);
         }
 
-        else {
-            incorrect.push(keyGuess);
-            console.log(incorrect);
-        }
-    
     }
-    console.log(keyGuess)
+
+    // incorrect letter
+
+    else {
+        incorrect.push(keyGuess);
+    }
+
+}
+console.log(keyGuess)
 }
 
 
