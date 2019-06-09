@@ -12,4 +12,8 @@ var currentWord = words[Math.floor(Math.random() * words.length)];
 
 var split = currentWord.split('');
 
+document.getElementById("current").innerHTML=split.join("");
+
+
+
 console.log(split);
