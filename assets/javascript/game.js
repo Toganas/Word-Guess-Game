@@ -2,12 +2,12 @@
 
 var words = ["dumbledore", "babynifflers", "pickett", "bunty", "chupacabra", "credence", "demiguise", "grindelwald", "jacob", "leta", "matagot", "nagini", "newt", "nicolasflamel", "niffler", "obscurus", "occamy", "persimmon", "pistachio", "tina", "pumpernickel", "pumpkin", "queenie", "swoopingevil", "theseus", "thunderbird"]
 
-// variable arrows that need filled by push/input
+// variables that need manipulation
 
 var correct = [];
 var incorrect = [];
 var underscore = [];
-
+var remaining = 10;
 
 // grabbing a word
 
@@ -15,8 +15,6 @@ var currentWord = words[Math.floor(Math.random() * words.length)];
 console.log(currentWord);
 
 // Creating Underscores
-
-
 
 var generateUnderscore = function() {
     for (var i = 0; i < currentWord.length; i++) {
@@ -27,7 +25,9 @@ var generateUnderscore = function() {
 
 document.getElementById("current").innerHTML = generateUnderscore().join(" ");
 
+// remaining guesses
 
+document.getElementById("remaining").innerHTML = remaining;
 
 
 // On keyup event
@@ -47,8 +47,7 @@ document.onkeyup = function (event) {
         }
         document.getElementById("current").innerHTML = underscore.join(" ");
         // incorrect letter
-
-       
+   
         if (currentWord.indexOf(keyGuess) > -1) {
             correct.push(keyGuess);
             underscore[currentWord.indexOf(keyGuess)] = keyGuess;
@@ -57,7 +56,6 @@ document.onkeyup = function (event) {
             incorrect.push(keyGuess);
             console.log(incorrect);
             document.getElementById("letters").innerHTML = incorrect.join(", ");
-            
         }
 
             // Fully Guessed Word
@@ -66,12 +64,8 @@ document.onkeyup = function (event) {
                 console.log("You Win"); 
             } 
 
+            // Out of guesses
+
           
         }
-
-       
     }
-    console.log(keyGuess)
-
-
-
