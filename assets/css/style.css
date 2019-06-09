@@ -6,16 +6,16 @@
 #body{
     background-color: black;
     font-family: "animales_fantastic", "Times New Roman",sans-serif;
-      color: #FFB066;
+      color: #ede0b8;
 }
 
 #wordGame{
-      border: #FFB066 dashed 1px;
+      border: #d8a64b dashed 1px;
 }
 
 .title{
     font-family: "animales_fantastic", "Times New Roman",sans-serif;
-    color: #FFB066;
+    color: #ede0b8;
     text-align: center;
     margin-top: 0px;
     font-size: 4.5em;
@@ -59,7 +59,7 @@
 
 #text {
     margin-bottom: 1em;
-    color: #e8e3d1;
+    color: #d8a64b;
 }
 
 #previous {
