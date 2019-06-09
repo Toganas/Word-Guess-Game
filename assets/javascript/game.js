@@ -2,9 +2,11 @@
 
 var words = ["dumbledore", "babynifflers", "pickett", "bunty", "chupacabra", "credence", "demiguise", "grindelwald", "jacob", "leta", "matagot", "nagini", "newt", "nicolasflamel", "niffler", "obscurus", "occamy", "persimmon", "pistachio", "tina", "pumpernickel", "pumpkin", "queenie", "swoopingevil", "theseus", "thunderbird"]
 
-// for(var i=0; i < words.length; i++){
-    
-// }
+// variable arrows that need filled by push/input
+
+var correct = [];
+var incorrect = [];
+var underscore = [];
 
 
 // grabbing a word
@@ -14,7 +16,7 @@ console.log(currentWord);
 
 // Creating Underscores
 
-var underscore = [];
+
 
 var generateUnderscore = function() {
     for (var i = 0; i < currentWord.length; i++) {
@@ -39,8 +41,15 @@ document.onkeyup = function (event) {
         // correct letter
         
         if (currentWord.indexOf(keyGuess) > -1) {
-            console.log(true);
+            correct.push(keyGuess);
+            console.log(correct);
         }
+
+        else {
+            incorrect.push(keyGuess);
+            console.log(incorrect);
+        }
+    
     }
     console.log(keyGuess)
 }
