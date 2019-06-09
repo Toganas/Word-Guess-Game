@@ -40,15 +40,18 @@ document.onkeyup = function (event) {
        
         // correct letter
         
-        // if (currentWord.indexOf(keyGuess) > -1) {
-        //     correct.push(keyGuess);
-        //     underscore[currentWord.indexOf(keyGuess)] = keyGuess;
+        
             
         for (var j =0; j < currentWord.length; j++){
             if (currentWord[j] === keyGuess){
                 underscore[j] = keyGuess;
             }
+
+            // incorrect letter
+
+            
         }
+        
 
             // Fully Guessed Word
 
@@ -56,16 +59,17 @@ document.onkeyup = function (event) {
                 // console.log("You Win");
             } 
             console.log(underscore);
-
+        if (currentWord.indexOf(keyGuess) > -1) {
+            correct.push(keyGuess);
+            underscore[currentWord.indexOf(keyGuess)] = keyGuess;
         }
-
-        // incorrect letter
-
         else {
-            incorrect.push(keyGuess);
-            console.log(incorrect);
+                incorrect.push(keyGuess);
+                console.log(incorrect);
+            }
         }
-    
+
+       
     }
     console.log(keyGuess)
 
