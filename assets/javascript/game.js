@@ -9,7 +9,7 @@ var words = ["albus dumbledore", "baby nifflers", "pickett the bowtruckle", "bun
 
 // grabbing a word
 var currentWord = words[Math.floor(Math.random() * words.length)];
-
+currentWord = currentWord.replace(" ","");
 var split = currentWord.split('');
 
 document.getElementById("current").innerHTML=split.join("");
