@@ -3,7 +3,7 @@
 var words = ["dumbledore", "babynifflers", "pickett", "bunty", "chupacabra", "credence", "demiguise", "grindelwald", "jacob", "leta", "matagot", "nagini", "newt", "nicolasflamel", "niffler", "obscurus", "occamy", "persimmon", "pistachio", "tina", "pumpernickel", "pumpkin", "queenie", "swoopingevil", "theseus", "thunderbird"]
 
 
-// variables that need manipulation
+// global variables
 
 var correct = [];
 var incorrect = [];
@@ -12,14 +12,17 @@ var remaining = 10;
 var wins = 0;
 var previousWord = []
 
+
+
+
 // grabbing a word
 
 var currentWord = words[Math.floor(Math.random() * words.length)];
-console.log(currentWord);
+// console.log(currentWord);
 
 // Creating Underscores
 
-var generateUnderscore = function () {
+function generateUnderscore() {
     for (var i = 0; i < currentWord.length; i++) {
         underscore.push("_");
     }
@@ -69,9 +72,11 @@ document.onkeyup = function (event) {
 
         if (underscore.join("") == currentWord) {
             document.getElementById("wins").innerHTML = wins += 1;
+            previousWord = [];
             previousWord.push(currentWord);
             document.getElementById("previous").innerHTML = previousWord;
-            // document.getElementByID("picture").src = "../images/albus_dumbledore.jpg";
+            newGame();
+            
         }
       
         console.log(previousWord);
@@ -81,9 +86,24 @@ document.onkeyup = function (event) {
     // Out of guesses
 
     if (remaining === 0) {
+        previousWord = [];
         previousWord.push(currentWord);
         document.getElementById("previous").innerHTML = previousWord;
-
+        // document.getElementsByClassName("picture").src = "../images/pumpernickle_cork.jpg"; 
+        newGame();
     }
 
+}
+
+// I know this is bad, but I can't figure this out right now :(  Starting New Game
+
+function newGame() {
+    remaining = 10;
+    correct = [];
+    incorrect = [];
+    underscore = [];
+    currentWord = [];
+    currentWord = words[Math.floor(Math.random() * words.length)];
+    generateUnderscore();
+    console.log
 }
