@@ -54,9 +54,8 @@ document.onkeyup = function (event) {
             correct.push(keyGuess);
             underscore[currentWord.indexOf(keyGuess)] = keyGuess;
         }
-        else {
-            incorrect.push(keyGuess);
-            console.log(incorrect);
+        else if (incorrect.indexOf(keyGuess) === -1){
+            incorrect.push(keyGuess);  
             document.getElementById("letters").innerHTML = incorrect.join(", ");
             document.getElementById("remaining").innerHTML = remaining -= 1;
         }
@@ -74,4 +73,4 @@ document.onkeyup = function (event) {
             }
           
         }
-    }
+}
