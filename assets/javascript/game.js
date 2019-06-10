@@ -4,8 +4,8 @@ var words = ["dumbledore", "babynifflers", "pickett", "bunty", "chupacabra", "cr
 
 // images?
 
-// var words = [
-//      { w: "dumbledore", img: "assets/images/albus_dumbledore.jpeg" },
+var images = 
+     { dumbledore: "assets/images/albus_dumbledore.jpeg" };
 //      { w: "babynifflers", img: "assets/images/babynifflers.jpg" },
 //      { w: "pickett", img: "assets/images/bowtruckle.jpg" },
 //      { w: "bunty", img: "assets/images/bunty.jpg" }, 
@@ -105,10 +105,67 @@ document.onkeyup = function (event) {
             previousWord = [];
             previousWord.push(currentWord);
             document.getElementById("previous").innerHTML = previousWord;
-            document.getElementById("picture").src ="assets/images/fantasticbeasts_banner_cast.jpg";
+            document.getElementById("picture").src =images[words[0]];
+           
+            // This is gonna look like crap and  be super redundant, but I think it's gonna work.  I need to learn how to clean this up/DRY.
+
+            //   if (previousWord === "dumbledore"){
+            //       document.getElementById("picture").src = "assets/images/albus_dumbledore.jpeg";
+            //   } else if (previousWord === "babynifflers") {
+            //       document.getElementById("picture").src = "assets/images/babynifflers.jpg";
+            //   } else if (previousWord === "pickett") {
+            //       document.getElementById("picture").src = "assets/images/bowtruckle.jpg";
+            //   } else if (previousWord === "bunty") {
+            //       document.getElementById("picture").src = "assets/images/bunty.jpg";
+            //   } else if (previousWord === "chupacabra") {
+            //       document.getElementById("picture").src = "assets/images/chupacabra.jpg";
+            //   } else if (previousWord === "credence") {
+            //       document.getElementById("picture").src = "assets/images/credence_barebone.jpg";
+            //   } else if (previousWord === "demiguise") {
+            //       document.getElementById("picture").src = "assets/images/demiguise.jpg";
+            //   } else if (previousWord === "grindelwald") {
+            //       document.getElementById("picture").src = "assets/images/grindelwald.jpg";
+            //   } else if (previousWord === "jacob") {
+            //       document.getElementById("picture").src = "assets/images/jacobkowalski.jpg";
+            //   } else if (previousWord === "leta") {
+            //       document.getElementById("picture").src = "assets/images/leta_lestrange.jpg";
+            //   } else if (previousWord === "matagot") {
+            //       document.getElementById("picture").src = "assets/images/matagot.jpg";
+            //   } else if (previousWord === "nagini") {
+            //       document.getElementById("picture").src = "assets/images/nagini.jpg";
+            //   } else if (previousWord === "newt") {
+            //       document.getElementById("picture").src = "assets/images/newscamander.jpg";
+            //   } else if (previousWord === "nicolasflamel") {
+            //       document.getElementById("picture").src = "assets/images/nicolasflamel.jpg";
+            //   } else if (previousWord === "niffler") {
+            //       document.getElementById("picture").src = "assets/images/niffler_jewelry.jpg";
+            //   } else if (previousWord === "obscurus") {
+            //       document.getElementById("picture").src = "assets/images/obscurus.png";
+            //   } else if (previousWord === "occamy") {
+            //       document.getElementById("picture").src = "assets/images/occamy.jpg";
+            //   } else if (previousWord === "persimmon") {
+            //       document.getElementById("picture").src = "assets/images/persimmon.jpg";
+            //   } else if (previousWord === "pistachio") {
+            //       document.getElementById("picture").src = "assets/images/pistachio.jpg";
+            //   } else if (previousWord === "tina") {
+            //       document.getElementById("picture").src = "assets/images/porpentina_goldstein.jpg";
+            //   } else if (previousWord === "pumpernickel") {
+            //       document.getElementById("picture").src = "assets/images/pumpernickle.jpg";
+            //   } else if (previousWord === "pumpkin") {
+            //       document.getElementById("picture").src = "assets/images/pumpkin.jpg";
+            //   } else if (previousWord === "queenie") {
+            //       document.getElementById("picture").src = "assets/images/queenie_goldstein.jpg";
+            //   } else if (previousWord === "swoopingevil") {
+            //       document.getElementById("picture").src = "assets/images/swooping_evil.jpg";
+            //   } else if (previousWord === "theseus") {
+            //       document.getElementById("picture").src = "assets/images/theseus_scamander.jpg";
+            //   } else if (previousWord === "thunderbird") {
+            //       document.getElementById("picture").src = "assets/images/thunderbird.jpg";
+            //   }     
+
             newGame();
-        }
-      
+
+             
       
     }
 
@@ -116,7 +173,7 @@ document.onkeyup = function (event) {
 
     if (remaining === 0) {
         previousWord = [];
-        previousWord.push("So close, better luck next time");
+        previousWord.push("So close, better luck next time" + "");
         document.getElementById("previous").innerHTML = previousWord;
         document.getElementById('picture').src="assets/images/pumpernickle_cork.jpg";
         newGame();
@@ -135,4 +192,5 @@ function newGame() {
     currentWord = words[Math.floor(Math.random() * words.length)];
     generateUnderscore();
     console.log
+}
 }
