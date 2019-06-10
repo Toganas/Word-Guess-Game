@@ -79,8 +79,7 @@ document.onkeyup = function (event) {
             
         }
       
-        console.log(previousWord);
-
+      
     }
 
     // Out of guesses
@@ -89,7 +88,8 @@ document.onkeyup = function (event) {
         previousWord = [];
         previousWord.push(currentWord);
         document.getElementById("previous").innerHTML = previousWord;
-        // document.getElementsByClassName("picture").src = "../images/pumpernickle_cork.jpg"; 
+        // document.getElementsByClassName("picture").src = "pumpernickle_cork.jpg";
+        document.getElementById('picture').src="assets/images/pumpernickle_cork.jpg";
         newGame();
     }
 
