@@ -5,32 +5,7 @@ var words = ["dumbledore", "babynifflers", "pickett", "bunty", "chupacabra", "cr
 // images?
 
 var images = 
-     { dumbledore: "assets/images/albus_dumbledore.jpeg" };
-//      { w: "babynifflers", img: "assets/images/babynifflers.jpg" },
-//      { w: "pickett", img: "assets/images/bowtruckle.jpg" },
-//      { w: "bunty", img: "assets/images/bunty.jpg" }, 
-//      { w: "chupacabra", img: "assets/images/chupacabra.jpg" },
-//      { w: "credence", img: "assets/images/credence_barebone.jpg" },
-//      { w: "demiguise", img: "assets/images/demiguise.jpg" },
-//      { w: "grindelwald", img: "assets/images/grindelwald.jpg" },
-//      { w: "jacob", img: "assets/images/jacobkowalski.jpg" },
-//      { w: "leta", img: "assets/images/leta_lestrange.jpg" },
-//      { w: "matagot", img: "assets/images/matagot.jpg" },
-//      { w: "nagini", img: "assets/images/nagini.jpg" },
-//      { w: "newt", img: "assets/images/newscamander.jpg" },
-//      { w: "nicolasflamel", img: "assets/images/nicolasflamel.jpg" },
-//      { w: "niffler", img: "assets/images/niffler_jewelry.jpg" },
-//      { w: "obscurus", img: "assets/images/obscurus.png" },
-//      { w: "occamy", img: "assets/images/occamy.jpg" },
-//      { w: "persimmon", img: "assets/images/persimmon.jpg" },
-//      { w: "pistachio",img: "assets/images/pistachio.jpg" },
-//      { w: "tina", img: "assets/images/porpentina_goldstein.jpg" },
-//      { w: "pumpernickel", img: "assets/images/pumpernickle.jpg" },
-//      { w: "pumpkin", img: "assets/images/pumpkin.jpg"},
-//      { w: "queenie", img: "assets/images/queenie_goldstein.jpg" },
-//      { w: "swoopingevil", img: "assets/images/swooping_evil.jpg"},
-//      { w: "theseus", img: "assets/images/theseus_scamander.jpg"},
-//      { w: "thunderbird", img: "assets/images/thunderbird.jpg"}
+     { dumbledore: "assets/images/albus_dumbledore.jpeg",  babynifflers: "assets/images/babynifflers.jpg", pickett: "assets/images/bowtruckle.jpg", bunty: "assets/images/bunty.jpg", chupacabra: "assets/images/chupacabra.jpg", credence: "assets/images/credence_barebone.jpg", demiguise: "assets/images/demiguise.jpg", grindelwald: "assets/images/grindelwald.jpg", jacob: "assets/images/jacobkowalski.jpg", leta: "assets/images/leta_lestrange.jpg", matagot: "assets/images/matagot.jpg", nagini: "assets/images/nagini.jpg", newt: "assets/images/newscamander.jpg", nicolasflamel: "assets/images/nicolasflamel.jpg", niffler: "assets/images/niffler_jewelry.jpg", obscurus: "assets/images/obscurus.png", occamy: "assets/images/occamy.jpg", persimmon: "assets/images/persimmon.jpg", pistachio: "assets/images/pistachio.jpg", tina: "assets/images/porpentina_goldstein.jpg", pumpernickel: "assets/images/pumpernickle.jpg", pumpkin: "assets/images/pumpkin.jpg", queenie: "assets/images/queenie_goldstein.jpg", swoopingevil: "assets/images/swooping_evil.jpg", theseus: "assets/images/theseus_scamander.jpg", thunderbird: "assets/images/thunderbird.jpg"}
 //      ]
 
 // global variables
@@ -105,7 +80,7 @@ document.onkeyup = function (event) {
             previousWord = [];
             previousWord.push(currentWord);
             document.getElementById("previous").innerHTML = previousWord;
-            document.getElementById("picture").src =images[words[0]];
+            document.getElementById("picture").src = images[currentWord];
            
             // This is gonna look like crap and  be super redundant, but I think it's gonna work.  I need to learn how to clean this up/DRY.
 
