@@ -2,6 +2,36 @@
 
 var words = ["dumbledore", "babynifflers", "pickett", "bunty", "chupacabra", "credence", "demiguise", "grindelwald", "jacob", "leta", "matagot", "nagini", "newt", "nicolasflamel", "niffler", "obscurus", "occamy", "persimmon", "pistachio", "tina", "pumpernickel", "pumpkin", "queenie", "swoopingevil", "theseus", "thunderbird"]
 
+// images?
+
+// var words = [
+//      { w: "dumbledore", img: "assets/images/albus_dumbledore.jpeg" }
+//      { w: "babynifflers", img: "assets/images/babynifflers.jpg" }
+//      { w: "pickett", img: "assets/images/bowtruckle.jpg" }
+//      { w: "bunty", img: "assets/images/bunty.jpg" }, 
+//      { w: "chupacabra", img: "assets/images/chupacabra.jpg" }
+//      { w: "credence", img: "assets/images/credence_barebone.jpg" }
+//      { w: "demiguise", img: ""assets/images/demiguise.jpg" }
+//      { w: "grindelwald", img: "assets/images/grindelwald.jpg" }
+//      { w: "jacob", img: "assets/images/jacobkowalski.jpg" }
+//      { w: "leta", img: "assets/images/leta_lestrange.jpg" }
+//      { w: "matagot", img: "assets/images/matagot.jpg" }
+//      { w: "nagini", img: "assets/images/nagini.jpg" }
+//      { w: "newt", img: "assets/images/newscamander.jpg" }
+//      { w: "nicolasflamel", img: "assets/images/nicolasflamel.jpg" }
+//      { w: "niffler", img: "assets/images/niffler_jewelry.jpg" }
+//      { w: "obscurus", img: "assets/images/obscurus.png" }
+//      { w: "occamy", img: "assets/images/occamy.jpg" }
+//      { w: "persimmon", img: "assets/images/persimmon.jpg" }
+//      { w: "pistachio",img: "assets/images/pistachio.jpg" }
+//      { w: "tina", img: "assets/images/porpentina_goldstein.jpg" }
+//      { w: "pumpernickel", img: "assets/images/pumpernickle.jpg" }
+//      { w: "pumpkin", img: "assets/images/pumpkin.jpg"}
+//      { w: "queenie", img: "assets/images/queenie_goldstein.jpg" }
+//      { w: "swoopingevil", img: "assets/images/swooping_evil.jpg"}
+//      { w: "theseus", img: "assets/images/theseus_scamander.jpg"}
+//      { w: "thunderbird", img: "assets/images/thunderbird.jpg"}
+//      ]
 
 // global variables
 
