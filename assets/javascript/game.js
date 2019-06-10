@@ -105,7 +105,7 @@ document.onkeyup = function (event) {
             previousWord = [];
             previousWord.push(currentWord);
             document.getElementById("previous").innerHTML = previousWord;
-            document.getElementById("picture").src ="assets/images/fantasticbeasts-banner-cast.jpg";
+            document.getElementById("picture").src ="assets/images/fantasticbeasts_banner_cast.jpg";
             newGame();
         }
       
