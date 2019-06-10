@@ -76,6 +76,9 @@ document.onkeyup = function (event) {
             previousWord.push(currentWord);
             document.getElementById("previous").innerHTML = previousWord;
             newGame();
+
+            //I hope this works, but it's gonna be some ugly crap
+            
             
         }
       
@@ -86,7 +89,7 @@ document.onkeyup = function (event) {
 
     if (remaining === 0) {
         previousWord = [];
-        previousWord.push(currentWord);
+        previousWord.push("So close, better luck next time");
         document.getElementById("previous").innerHTML = previousWord;
         // document.getElementsByClassName("picture").src = "pumpernickle_cork.jpg";
         document.getElementById('picture').src="assets/images/pumpernickle_cork.jpg";
